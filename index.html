@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Components</a></li>
+                <li><a href="#">Utilities</a></li>
+                <li><a href="#">Plugins</a></li>
+            </div>
+            <li class="menu-bar"><a href=""><i class="fa-solid fa-bars"></i></a></li>
+            <button class="btn-make">MAKE ARESERVATION</button>
+        </nav>
+    </header>
+    <div class="content-1">
+        <div class="cont-left">
+            <div data-aos="fade-right" data-aos-duration="1800">
+
+                <img class="img-fluid" src="./images/plate.png" alt="">
+            </div>
+        </div>
+        <div class="cont-right">
+            <h1>The Spectacle Before Us
+                Was Indeed Sublime.</h1>
+            <p>Apparently, we had reached a great height in the atmosphere, for the sky was a dead black, and which
+                lifts the horizon of the sea to the level of the spectator on a hillside.</p>
+            <button class="btn-order">ORDER ONLINE</button>
+            <button class="btn-location">OUR LOCATION</button>
+        </div>
+    </div>
+    <div class="content-2">
+        <div class="text">
+
+            <h3 data-aos="zoom-in">Menu</h3>
+            <h1 data-aos="zoom-in">Taste Our Foods & Enjoy</h1>
+
+
+
+            <div class="slider-container">
+                <div class="image-wrapper">
+                    <img src="./images/antioxidant-beverage-carrot-juice.png" alt=" Carrot Juic">
+                    <img src="./images/bowl-calcium-cereal.png" alt="calcium cereal">
+                    <img src="./images/bread-bun-chopping-board.png" alt="Sandwich">
+                    <img src="./images/bowl-delicious-dinner.png" alt="Noodles">
+                    <img src="./images/sec.jpg" alt="Coffee">
+                    <img src="./images/sec.jpg" alt="Coffee">
+                    <img src="./images/antioxidant-beverage-carrot-juice.png" alt=" Carrot Juic">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content-3">
+        <div class="menu-tabs">
+
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+
+                <div class="tab-nav">
+                    <button class="tab-link active" onclick="openTab(event, 'Breakfast')">
+                        <span>🍵</span>
+                        Breakfast
+                    </button>
+                    <button class="tab-link" onclick="openTab(event, 'Lunch')">
+                        <i class="icon">🍴</i> Lunch
+                    </button>
+                    <button class="tab-link" onclick="openTab(event, 'Desserts')">
+                        <i class="icon">🍰</i> Desserts
+                    </button>
+                    <button class="tab-link" onclick="openTab(event, 'Drinks')">
+                        <i class="icon">🍹</i> Drinks
+                    </button>
+                </div>
+            </div>
+            <div class="menu-bg">
+                <div id="Breakfast" class="tab-content active-content">
+                    <div class="menu-item">
+                        <h3>Avocado Toast Deluxe <span class="btn-price">$8.50</span></h3>
+                        <p>Sourdough toast layered with smashed avocado, cherry tomato, radish, microgreens, and a
+                            drizzle
+                            of olive oil.</p>
+                        <br>
+                        <h3>Smoked Salmon Bagel<span class="btn-price">$9.50</span></h3>
+                        <p>Everything bagel with cream cheese, smoked salmon, capers, and fresh dill.</p>
+                        <br>
+                        <h3>Greek Yogurt Parfait<span class="btn-price">$6.50</span></h3>
+                        <p>Creamy yogurt layered with house-made granola, local honey, and seasonal berries.</p>
+                        <br>
+                        <h3>Spinach & Feta Omelet<span class="btn-price">$8.50</span></h3>
+                        <p>Three-egg omelet filled with sautéed spinach, feta cheese, and fresh herbs.
+                        </p>
+                        <br>
+                        <h3>Banana Walnut Pancakes<span class="btn-price">$8.00</span></h3>
+                        <p>Fluffy pancakes topped with caramelized bananas, toasted walnuts, and maple syrup.</p>
+                        <br>
+                        <h3>Savory Oat Bowl<span class="btn-price">$7.50</span></h3>
+                        <p>Steel-cut oats with sautéed mushrooms, baby spinach, a soft-poached egg, and parmesan.</p>
+                        <br>
+                        <h3>Breakfast Quesadilla<span class="btn-price">$9.00</span></h3>
+                        <p>Scrambled eggs, cheddar, black bean spread, pico de gallo, and avocado inside a grilled
+                            tortilla.</p>
+                        <br>
+
+                    </div>
+                </div>
+
+
+                <div id="Lunch" class="tab-content">
+                    <div class="menu-item">
+                        <h3>Grilled Veggie Wrap <span class="btn-price">$10.50</span></h3>
+                        <p>Grilled zucchini, bell pepper, spinach, hummus, and feta in a warm tortilla.</p>
+                        <br>
+                        <h3>Turkey & Avocado Club <span class="btn-price">$11.00</span></h3>
+                        <p>Roasted turkey, avocado, crisp lettuce, tomato, bacon, and lemon-dill mayo on multigrain
+                            bread.
+                        </p>
+                        <br>
+                        <h3>Caprese Sandwich <span class="btn-price">$9.50</span></h3>
+                        <p>Fresh mozzarella, tomato, basil, balsamic glaze, arugula on toasted focaccia.</p>
+                        <br>
+                        <h3>Spicy Soba Noodle Salad <span class="btn-price">$12.50</span></h3>
+                        <p>Chilled buckwheat noodles, edamame, carrots, scallions, sesame-chili dressing.
+                        </p>
+                        <br>
+                        <h3>Roasted Turkey Club Wrap <span class="btn-price">$8.00</span></h3>
+                        <p>Smoked turkey, crispy bacon, baby greens, tomato, garlic aioli in a spinach wrap.</p>
+                        <br>
+                        <h3>Seasonal Soup & Bread <span class="btn-price">$9.00</span></h3>
+                        <p>Chef’s daily soup with a slice of warm rustic sourdough.</p>
+                        <br>
+                        <h3>Mediterranean Grain Bowl <span class="btn-price">$15.00</span></h3>
+                        <p>Quinoa, roasted chickpeas, cucumber, tomato, olives, feta, lemon-tahini dressing.</p>
+                        <br>
+
+                    </div>
+                </div>
+
+                <div id="Desserts" class="tab-content">
+                    <div class="menu-item">
+                        <h3>Classic Cheesecake <span class="btn-price">$6.00</span></h3>
+                        <p>Creamy vanilla cheesecake with a buttery graham crust.</p>
+                        <br>
+                        <h3>Chocolate Lava Cake <span class="btn-price">$7.00</span></h3>
+                        <p>Warm chocolate cake with a molten center, served with whipped cream.</p>
+                        <br>
+                        <h3>Seasonal Fruit Tart<span class="btn-price">$6.50</span></h3>
+                        <p>Buttery crust filled with vanilla custard and fresh seasonal fruit.</p>
+                        <br>
+                        <h3>Carrot Cake Slice <span class="btn-price">$5.50</span></h3>
+                        <p>Moist carrot cake with spiced cream cheese frosting.
+                        </p>
+                        <br>
+                        <h3>Espresso Brownie<span class="btn-price">$4.50</span></h3>
+                        <p>Fudgy brownie infused with a hint of espresso, topped with dark chocolate ganache.</p>
+                        <br>
+                        <h3>Lemon Poppy Loaf <span class="btn-price">$4.00</span></h3>
+                        <p>Zesty lemon cake with poppy seeds and light glaze.</p>
+                        <br>
+                        <h3>Vegan Chocolate Mousse <span class="btn-price">$5.50</span></h3>
+                        <p>Silky dark chocolate mousse made with coconut cream.</p>
+                        <br>
+
+                    </div>
+                </div>
+
+                <div id="Drinks" class="tab-content">
+                    <div class="menu-item">
+                        <h3>House Brew Coffee<span class="btn-price">$3.00</span></h3>
+                        <p>Freshly brewed, locally roasted beans.</p>
+                        <br>
+                        <h3>Iced Latte<span class="btn-price">$4.50</span></h3>
+                        <p>Chilled espresso with milk of your choice.</p>
+                        <br>
+                        <h3>Matcha Green Tea Latte<span class="btn-price">$4.50</span></h3>
+                        <p>Organic matcha whisked with steamed milk, hot or iced.</p>
+                        <br>
+                        <h3>Chai Spice Latte<span class="btn-price">$4.50</span></h3>
+                        <p>Black tea with a house blend of warming spices.
+                        </p>
+                        <br>
+                        <h3>Fresh Squeezed Orange Juice<span class="btn-price">$4.00</span></h3>
+                        <p>Made to order with ripe, sweet oranges.</p>
+                        <br>
+                        <h3>Sparkling Lemonade<span class="btn-price">$3.50</span></h3>
+                        <p>Fresh lemon juice, cane sugar, and sparkling water.</p>
+                        <br>
+                        <h3>Herbal Iced Tea<span class="btn-price">$3.50</span></h3>
+                        <p>Caffeine-free blend of hibiscus and rose hips, served chilled.</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-4">
+        <!-- <div class="top-white-background"></div> -->
+
+        <div class="content-container">
+            <img class="fries-image" src="./images/fried-clipart-transparent-background-7.png"
+                alt="French Fries in a bag">
+
+            <div class="text-content">
+                <p class="sub-heading">Hungry?</p>
+                <h2 class="main-text">We will home deliver !</h2>
+                <button class="cta-button">MAKE AN ORDER</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-5">
+        <div class="catering">
+            <div class="catering-box">
+                <h1>Catering</h1>
+                <h2>We Manage Your Events</h2>
+                <p>Allow our Chef to deliver the perfect private dinner or cocktail party experience in your home; or
+                    let us
+                    simply add a little extra flavor to your next office meeting, boat trip, or beach picnic. By
+                    partnering
+                    with our sibling location Rosewater Wine & Spirits, we can offer a full array of bar services and
+                    beverage selections. Email us to learn more.</p>
+            </div>
+        </div>
+        <div class="box-shadow">
+            <div class="box-1">
+                <img src="./images/pancake_PNG94.png" alt="">
+                <div class="text-1">
+                    <p>We Cater in Weddings,<br>
+                        Corporate Functions <br>
+                        and Events.</p>
+                    <button class="hire-button">HIRE US NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-6">
+        <div class="image-grid-container">
+
+            <div class="grid-item large-item">
+                <img src="./images/bigimg.jpg" alt="Fried food being dipped in sauce with chopsticks">
+            </div>
+
+            <div class="grid-item small-item">
+                <img src="./images/1.jpg" alt="Fried pastry pockets">
+            </div>
+            <div class="grid-item small-item">
+                <img src="./images/2.jpg" alt="Gourmet burger">
+            </div>
+            <div class="grid-item small-item">
+                <img src="./images/3.jpg" alt="Crinkle-cut sweet potato fries">
+            </div>
+
+            <div class="grid-item small-item">
+                <img src="./images/4.jpg" alt="Olive oil and spices on a table">
+            </div>
+            <div class="grid-item small-item">
+                <img src="./images/5.jpg" alt="People cheering with beer glasses">
+            </div>
+            <div class="grid-item small-item">
+                <img src="./images/6.jpg" alt="Outdoor area with colorful paper lanterns">
+            </div>
+
+        </div>
+
+
+        <div class="content-7">
+            <div class="left-box">
+                <div class="left-about">
+                    <h2>About Us</h2>
+                    <h1>Who Are we?</h1>
+                    <p>We are a chain of theme restaurant founded in 1971 in London. In 1979, the cafe began covering
+                        its walls with rock and roll memorabilia, a tradition which expanded to others in the chain.</p>
+                    <button class="learn-button">LEARN MORE</button>
+                </div>
+                <div class="left-founder">
+                    <img src="./images/1.png" alt="">
+                    <!-- <p>Gordon Ramsey</p>
+                    <p>Owner & Founder</p>
+                     -->
+                    <img src="./images/2.png" alt="">
+                    <img src="./images/3.png" alt="">
+                    <img src="./images/4.png" alt="">
+                    <img src="./images/5.png" alt="">
+
+                </div>
+            </div>
+            <div class="right-box">
+                <!-- <img src="./images/soup-2.png" alt=""> -->
+            </div>
+        </div>
+
+        <div class="content-8">
+            <div class="text-8">
+                <h2>Location & Timing</h2>
+                <h1>Contact With Us</h1>
+            </div>
+            <div class="box">
+                <div class="boxs-1">
+                    <h3 style="color: #ff7f6e;">Conatct Us</h3>
+                    <i class="fa-solid fa-map" style="color: #ff7f6e;">
+                    </i>
+                    <p>Av. Paz Soldán 290, San
+                        Isidro, Lima 27 - Peru</p>
+                    <i class="fa-solid fa-phone" style="color: #ff7f6e;">
+                    </i>
+                    <p>+511 442-2777</p>
+                    <i class="fa-solid fa-envelope" style="color: #ff7f6e;">
+                    </i>
+                    <p>mail@restaurantpro.com</p>
+                </div>
+                <div class="boxs-2">
+                    <h3>Hours of service</h3>
+                    <p>Monday to Saturday</p>
+                    <p>1:00 pm - 3:00 pm and</p>
+                    <p>7:00 pm - 11:00 pm</p>
+                    <p>Sunday</p>
+                    <p>12:30 pm - 3:30 pm</p>
+                </div>
+                <div class="boxs-3">
+                    <h3>Telephone Support: </h3>
+                    <p>Monday To Saturday From</p>
+                    <p>9:00 Am to 9:00 Pm</p>
+                    <button class="btn-make">MAKE ARESERVATION</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="content-9">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.74842717682!2d72.41492748914426!3d23.020474102588533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1759738909551!5m2!1sen!2sin"
+                width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Feel free to drop us a line!</h1>
+                    <p>Let's talk if you have any query or suggestion. We are open to learn from you. <br>So don't
+                        hesitate to reach us anytime.</p>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-column left-column">
+                        <input type="text" placeholder="Your Name" class="form-input">
+                        <input type="text" placeholder="Subject" class="form-input">
+                        <input type="email" placeholder="Email Address" class="form-input">
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="send-copy">
+                            <label for="send-copy">Send me a copy</label>
+                        </div>
+                    </div>
+
+                    <div class="form-column right-column">
+                        <textarea placeholder="Type your message here" class="form-textarea"></textarea>
+
+                        <button type="submit" class="submit-btn">GIVE US A SHOT</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="testimonial-slider">
+            <div class="slides-container">
+
+                <div class="testimonial-slide active">
+                    <div class="quote-content">
+                        <div class="stars">
+                            <i class="fa-solid fa-star" style="color: #ff7f6e;"></i>
+                            <i class="fa-solid fa-star" style="color: #ff7f6e;"></i>
+                            <i class="fa-solid fa-star" style="color: #ff7f6e;"></i>
+                            <i class="fa-solid fa-star" style="color: #ff7f6e;"></i>
+                            <i class="fa-solid fa-star" style="color: #ff7f6e;"></i>
+
+                        </div>
+                        <p class="quote-text">am thrilled with the possibilities that Slick brought to my web design
+                            agency. Creating is easier with Slick.</p>
+                        <p class="author">~Noah Kingon</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="quote-content">
+                        <div class="stars">
+                            <i class="fa-solid fa-star" style="color: #ff7f6e;"></i>
+                            <i class="fa-solid fa-star" style="color: #ff7f6e;"></i>
+                            <i class="fa-solid fa-star" style="color: #ff7f6e;"></i>
+                            <i class="fa-solid fa-star" style="color: #ff7f6e;"></i>
+                            <i class="fa-solid fa-star" style="color: #ff7f6e;"></i>
+
+                        </div>
+                        <p class="quote-text">Restaurant Pro probably make one of the best pizza in Town. I would
+                            definitely post their pizza picture someday. But today I have tasted their another items. So
+                            there I have mentioned that</p>
+                        <p class="author">~Richard Hendriks</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="quote-content">
+                        <div class="stars">
+                            <i class="fa-solid fa-star" style="color: #ff7f6e;"></i>
+                            <i class="fa-solid fa-star" style="color: #ff7f6e;"></i>
+                            <i class="fa-solid fa-star" style="color: #ff7f6e;"></i>
+                            <i class="fa-solid fa-star" style="color: #ff7f6e;"></i>
+                            <i class="fa-solid fa-star" style="color: #ff7f6e;"></i>
+
+                        </div>
+                        <p class="quote-text">Restaurant &amp; Cafe, we aim at promoting the foodstuff industry through
+                            the branches , we establish and through the new dishes. and integrate between different
+                            cultures, by merging different Oriental and its western recipes</p>
+                        <p class="author">~Lily Rose</p>
+                    </div>
+                </div>
+                <div class="pizza-image">
+               <img src="./images/pizza.png" alt="Sliced Pizza">
+           </div>
+               
+            </div>
+
+
+
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const slides = document.querySelectorAll('.testimonial-slide');
+                let currentSlide = 0;
+                const slideInterval = 5000;
+                function nextSlide() {
+                    slides[currentSlide].classList.remove('active');
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].classList.add('active');
+                }
+
+                slides[currentSlide].classList.add('active');
+
+                setInterval(nextSlide, slideInterval);
+            });
+        </script>
+
+        <script>
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+
+
+                tabcontent = document.getElementsByClassName("tab-content");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                    tabcontent[i].classList.remove("active-content");
+                }
+
+                tablinks = document.getElementsByClassName("tab-link");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].classList.remove("active");
+                }
+
+
+                document.getElementById(tabName).style.display = "block";
+                document.getElementById(tabName).classList.add("active-content");
+                evt.currentTarget.classList.add("active");
+            }
+
+
+            document.addEventListener("DOMContentLoaded", function () {
+
+                document.querySelector(".tab-nav .tab-link").click();
+            });
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+
+</html>
