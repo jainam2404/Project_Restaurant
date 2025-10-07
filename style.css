@@ -207,36 +207,50 @@ nav {
     width: 100%;
     overflow: hidden;
     position: relative;
-    -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
-    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
 }
 
 .image-wrapper {
     display: flex;
     width: 200%;
-    animation: scroll 25s linear infinite;
+    animation: scroll 30s linear infinite;
 }
 
 .image-wrapper img {
-    width: calc(100% / 14);
-    /* 14 total images (7 original + 7 copies) */
-    height: 200px;
+    width: calc(100% / 6);
+    height: 400px;
     object-fit: cover;
     padding: 0 15px;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 @keyframes scroll {
     0% {
         transform: translateX(0);
     }
-
     100% {
         transform: translateX(-50%);
     }
 }
 
+@media (max-width: 768px) {
+    .text h1 {
+        font-size: 2.2rem;
+    }
 
+    .image-wrapper img {
+        width: 200px;
+        height: 160px;
+        gap: 15px; 
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-215px * 7));
+        }
+    }
+}
 .content-3 {
     padding: 80px 5%;
 }
@@ -713,8 +727,9 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px 80px 20px;
-    justify-content: space-between;
+   
 }
+
 .footer-cta {
 
     flex-basis: 50%;
@@ -740,12 +755,7 @@ nav {
     z-index: 10;
 }
 
-.logo {
-    /* font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #f3a830; */
-}
+
 
 .logo-icon {
     background-color: #f3a830;
@@ -791,7 +801,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     gap: 80px;
-    padding-top: 20px;
+    padding-top: 65px;
 
 }
 
@@ -862,7 +872,7 @@ nav {
 
     .cta-image-background {
         background-image: none;
-        
+
         padding-left: 0;
         min-height: auto;
         justify-content: center;
