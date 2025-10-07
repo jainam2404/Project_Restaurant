@@ -227,6 +227,7 @@ nav {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -240,17 +241,20 @@ nav {
     .image-wrapper img {
         width: 200px;
         height: 160px;
-        gap: 15px; 
+        gap: 15px;
     }
+
     @keyframes scroll {
         0% {
             transform: translateX(0);
         }
+
         100% {
             transform: translateX(calc(-215px * 7));
         }
     }
 }
+
 .content-3 {
     padding: 80px 5%;
 }
@@ -727,7 +731,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px 80px 20px;
-   
+
 }
 
 .footer-cta {
@@ -997,5 +1001,76 @@ nav {
 
     footer {
         text-align: center;
+    }
+}
+
+
+
+.cont-right {
+    padding: 100px 5%;
+    
+    max-width: 800px;
+    
+    margin: 0 auto;
+}
+
+.cont-right h1 {
+    font-size: 3rem;
+    
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.cont-right p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.btn-order,
+.btn-location {
+    display: block;
+    
+    width: 100%;
+    max-width: 300px;
+  
+    padding: 15px 30px;
+    margin-bottom: 15px;
+
+    text-align: center;
+   
+}
+
+
+@media (max-width: 768px) {
+
+    
+    .cont-right h1 {
+        font-size: 2.8rem;
+        
+        margin-bottom: 15px;
+    }
+
+    .cont-right {
+        padding: 50px 5%;
+    }
+
+    .btn-order,
+    .btn-location {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media (min-width: 600px) {
+
+    .btn-order,
+    .btn-location {
+        display: inline-block;
+        width: auto;
+        max-width: none;
+        margin-right: 15px;
+        margin-bottom: 0;
     }
 }
