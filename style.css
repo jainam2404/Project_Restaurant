@@ -667,12 +667,12 @@ nav {
 
 .testimonial-slider {
     padding: 100px 5%;
-    background: linear-gradient(rgba(40, 40, 40, 0.8), rgba(40, 40, 40, 0.8)), url('https://images.unsplash.com/photo-1504754524776-8f4f37790774?q=80&w=2070') no-repeat center center/cover;
+    background: linear-gradient(rgba(40, 40, 40, 0.8), rgba(40, 40, 40, 0.8)), url('images/pizza.png') no-repeat center center/cover;
     position: relative;
     overflow: hidden;
     min-height: 500px;
     display: flex;
-    align-items: center;
+   
     justify-content: center;
 }
 
@@ -709,14 +709,6 @@ nav {
     font-size: 1.1rem;
 }
 
-.pizza-image {
-    position: absolute;
-    bottom: -80px;
-    right: -150px;
-    width: 400px;
-    z-index: 10;
-    pointer-events: none;
-}
 
 .restaurant-footer {
     background-color: #1a1a2e;
